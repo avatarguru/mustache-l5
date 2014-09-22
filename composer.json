@@ -1,0 +1,25 @@
+{
+    "name": "avatarguru/mustache-l4",
+    "type": "library",
+    "description": "A Mustache.php wrapper for Laravel 4",
+    "keywords": ["laravel", "laravel 4", "mustache", "php"],
+    "homepage": "https://github.com/avatarguru/mustache-l4",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Dimaculangan",
+            "email": "mcdimaculangan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "~4|~5",
+        "mustache/mustache": "~3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Avatarguru\\MustacheL4": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
