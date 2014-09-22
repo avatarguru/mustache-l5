@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class MustacheL4ServiceProvider extends ServiceProvider {
+class MustacheL5ServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
