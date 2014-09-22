@@ -14,7 +14,7 @@ return array(
 
     // A Mustache loader instance for partials. If none is specified, defaults to an ArrayLoader for the supplied
     // partials option, if present, and falls back to the specified template loader.
-    'partials_loader' => App::make('Avatarguru\MustacheL4\FilesystemLoader'),
+    'partials_loader' => App::make('Avatarguru\MustacheL5\FilesystemLoader'),
     
     // An array of Mustache partials. Useful for quick-and-dirty string template loading, 
     // but not as efficient or lazy as a Filesystem (or database) loader.

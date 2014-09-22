@@ -1,5 +1,5 @@
 <?php
-namespace Avatarguru\MustacheL4;
+namespace Avatarguru\MustacheL5;
 
 use Mustache_Loader;
 use Illuminate\Filesystem\Filesystem;

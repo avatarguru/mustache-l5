@@ -1,5 +1,5 @@
 <?php
-namespace Avatarguru\MustacheL4;
+namespace Avatarguru\MustacheL5;
 
 use Illuminate\View\Engines\EngineInterface;
 use Illuminate\Filesystem\Filesystem;

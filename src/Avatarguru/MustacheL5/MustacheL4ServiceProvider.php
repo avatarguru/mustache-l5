@@ -1,4 +1,4 @@
-<?php namespace Avatarguru\MustacheL4;
+<?php namespace Avatarguru\MustacheL5;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class MustacheL4ServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->package('avatarguru/mustache-l4');
+		$this->package('avatarguru/mustache-l5');
 
 		$app = $this->app;
 
@@ -26,7 +26,7 @@ class MustacheL4ServiceProvider extends ServiceProvider {
 		{
 			$resolver->register('mustache', function() use($app)
 			{
-				return $app->make('Avatarguru\MustacheL4\MustacheEngine');
+				return $app->make('Avatarguru\MustacheL5\MustacheEngine');
 			});
 			return $resolver;
 		});
@@ -45,7 +45,7 @@ class MustacheL4ServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('mustache-l4');
+		return array('mustache-l5');
 	}
 
 }
