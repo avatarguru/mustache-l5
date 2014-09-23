@@ -1,15 +1,15 @@
-laravel4-mustache
+laravel5-mustache
 =================
 
-A Mustache.php wrapper for Laravel 4
+A Mustache.php wrapper for Laravel v4 | v5
 
 # Install
-Add mustache-l4 as a dependency to your `composer.json` file
+Add mustache-l5 as a dependency to your `composer.json` file
 
 ```json
 "require": {
 	"laravel/framework": "4.0.*",
-	"conarwelsh/mustache-l4": "dev-master"
+	"avatarguru/mustache-l5": "dev-master"
 }
 ```
 	
@@ -22,7 +22,7 @@ app/config/app.php
 ```php
 ...
 
-'Conarwelsh\MustacheL4\MustacheL4ServiceProvider',
+'Avatarguru\MustacheL5\MustacheL5ServiceProvider',
 	
 ...
 ```
@@ -33,9 +33,9 @@ You are all setup!
 
 # Usage
 
-Mustache-L4 is merely a wrapper for the [Mustache.php](https://github.com/bobthecow/mustache.php) library that integrates it into Laravel 4.
+Mustache-L5 is merely a wrapper for the [Mustache.php](https://github.com/bobthecow/mustache.php) library that integrates it into Laravel 4.
 
-Mustache-L4 registers itself with the Laravel View class, providing seemless integration with Laravel.  You can use Mustache just as you would Blade!
+Mustache-L5 registers itself with the Laravel View class, providing seemless integration with Laravel.  You can use Mustache just as you would Blade!
 The Laravel View class will choose the right templating engine to use based on the file extension of the view.  So all you have to do to render Mustache files, is ensure that your view has a `.mustache` file extension.  Mustache-L4 will take care of the rest.
 
 You can even mix and match template engines.  For instance maybe you have a Blade layout file, and you want to nest a Mustache view, thats fine!  However just be aware of the fact that Mustache does not understand Block Sections like Blade does.
@@ -169,6 +169,6 @@ Other than that it is business as usual!
 
 You can alter the configuration options that are passed to Mustache.php by publishing the config file.
 	
-	php artisan config:publish conarwelsh/mustache-l4
+	php artisan config:publish avatarguru/mustache-l5
 	
 All options in this config file are passed directly to the Mustache_Engine constructor, so you can use any of the options that you would use with [Mustache.php](https://github.com/bobthecow/mustache.php)
