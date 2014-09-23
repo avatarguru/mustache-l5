@@ -8,7 +8,7 @@ Add mustache-l5 as a dependency to your `composer.json` file
 
 ```json
 "require": {
-	"laravel/framework": "4.0.*",
+	"laravel/framework": "4.2.*",
 	"avatarguru/mustache-l5": "dev-master"
 }
 ```
