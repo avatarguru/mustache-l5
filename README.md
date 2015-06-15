@@ -8,7 +8,7 @@ Add mustache-l5 as a dependency to your `composer.json` file
 
 ```json
 "require": {
-	"laravel/framework": "4.2.*",
+	"laravel/framework": "5.1.*",
 	"avatarguru/mustache-l5": "dev-master"
 }
 ```
@@ -36,7 +36,7 @@ You are all setup!
 Mustache-L5 is merely a wrapper for the [Mustache.php](https://github.com/bobthecow/mustache.php) library that integrates it into Laravel 4.
 
 Mustache-L5 registers itself with the Laravel View class, providing seemless integration with Laravel.  You can use Mustache just as you would Blade!
-The Laravel View class will choose the right templating engine to use based on the file extension of the view.  So all you have to do to render Mustache files, is ensure that your view has a `.mustache` file extension.  Mustache-L4 will take care of the rest.
+The Laravel View class will choose the right templating engine to use based on the file extension of the view.  So all you have to do to render Mustache files, is ensure that your view has a `.mustache` file extension.  Mustache-L5 will take care of the rest.
 
 You can even mix and match template engines.  For instance maybe you have a Blade layout file, and you want to nest a Mustache view, thats fine!  However just be aware of the fact that Mustache does not understand Block Sections like Blade does.
 The Mustache view will be rendered into a variable named whatever section you passed the view to.  So for example if you were to do:
