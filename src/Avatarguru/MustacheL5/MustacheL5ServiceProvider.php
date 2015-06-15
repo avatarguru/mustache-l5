@@ -18,8 +18,6 @@ class MustacheL5ServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->package('avatarguru/mustache-l5');
-
 		$app = $this->app;
 
 		$app->extend('view.engine.resolver', function($resolver, $app)
